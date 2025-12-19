@@ -1,5 +1,7 @@
+"use client";
+
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
 import { ChevronLeft, Check, Minus, Plus } from "lucide-react";
 import { Slider } from "@/components/ui/slider";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -13,7 +15,7 @@ import {
 import { Button } from "@/components/ui/button";
 
 export default function Index() {
-  const navigate = useNavigate();
+  const router = useRouter();
   const [loanAmount, setLoanAmount] = useState(1650);
   const [duration, setDuration] = useState(13);
   const [frequency, setFrequency] = useState<"weekly" | "fortnightly" | "monthly">("weekly");
@@ -46,9 +48,9 @@ export default function Index() {
   };
 
   return (
-    <div className="min-h-screen bg-white font-[Lato]">
+    <div className="min-h-screen bg-white font-[var(--font-lato)]">
       {/* Status Bar */}
-      <div className="flex justify-between items-center px-7 py-5 h-14 font-[Poppins]">
+      <div className="flex justify-between items-center px-7 py-5 h-14 font-[var(--font-poppins)]">
         <div className="text-sm font-medium text-loan-text">9:30 PM</div>
         <div className="flex items-center gap-2">
           {/* Cellular Connection */}
@@ -103,7 +105,7 @@ export default function Index() {
 
             {/* Step 2 */}
             <div className="w-7 h-7 rounded-full border border-[#D9D9D9] flex items-center justify-center flex-shrink-0">
-              <span className="text-sm font-normal text-black/80 font-[Roboto]">2</span>
+              <span className="text-sm font-normal text-black/80 font-[var(--font-roboto)]">2</span>
             </div>
 
             <div className="flex items-center gap-[4.722px]">
@@ -114,7 +116,7 @@ export default function Index() {
 
             {/* Step 3 */}
             <div className="w-7 h-7 rounded-full border border-[#D9D9D9] flex items-center justify-center flex-shrink-0">
-              <span className="text-sm font-normal text-black/80 font-[Roboto]">3</span>
+              <span className="text-sm font-normal text-black/80 font-[var(--font-roboto)]">3</span>
             </div>
 
             <div className="flex items-center gap-[4.722px]">
@@ -125,7 +127,7 @@ export default function Index() {
 
             {/* Step 4 */}
             <div className="w-7 h-7 rounded-full border border-[#D9D9D9] flex items-center justify-center flex-shrink-0">
-              <span className="text-sm font-normal text-black/80 font-[Roboto]">4</span>
+              <span className="text-sm font-normal text-black/80 font-[var(--font-roboto)]">4</span>
             </div>
 
             <div className="flex items-center gap-[4.722px]">
@@ -136,7 +138,7 @@ export default function Index() {
 
             {/* Step 5 */}
             <div className="w-7 h-7 rounded-full border border-[#D9D9D9] flex items-center justify-center flex-shrink-0">
-              <span className="text-sm font-normal text-black/80 font-[Roboto]">5</span>
+              <span className="text-sm font-normal text-black/80 font-[var(--font-roboto)]">5</span>
             </div>
           </div>
         </div>
@@ -331,7 +333,7 @@ export default function Index() {
 
         {/* Continue Button */}
         <Button
-          onClick={() => navigate("/personal-details")}
+          onClick={() => router.push("/personal-details")}
           className="w-full h-12 bg-loan-blue hover:bg-loan-blue/90 text-white text-base font-bold rounded-xl"
         >
           Continue
