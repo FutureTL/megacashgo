@@ -1,0 +1,6 @@
+{
+  "/additional-details/page": "app/additional-details/page.js",
+  "/living-expenses/page": "app/living-expenses/page.js",
+  "/page": "app/page.js",
+  "/personal-details/page": "app/personal-details/page.js"
+}

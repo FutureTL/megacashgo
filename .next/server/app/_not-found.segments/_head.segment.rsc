@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[97367,["/_next/static/chunks/a16ec31656650fb4.js","/_next/static/chunks/789b32f17d09a552.js","/_next/static/chunks/ffc1e185febc3612.js","/_next/static/chunks/829a02cbf3c495d4.js","/_next/static/chunks/4fd93823156e59e8.js"],"ViewportBoundary"]
+3:I[97367,["/_next/static/chunks/a16ec31656650fb4.js","/_next/static/chunks/789b32f17d09a552.js","/_next/static/chunks/ffc1e185febc3612.js","/_next/static/chunks/829a02cbf3c495d4.js","/_next/static/chunks/4fd93823156e59e8.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"VryaPnY-4UydaR8Hf5Pi6","rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Fusion Nextjs"}],["$","meta","1",{"name":"description","content":"Converted from Vite + Express"}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}

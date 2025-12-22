@@ -245,7 +245,10 @@ export default function PersonalDetails() {
         </div>
 
         {/* Continue Button */}
-        <Button className="w-full h-12 bg-loan-blue hover:bg-loan-blue/90 text-white text-base font-bold rounded-xl shadow-md transition-all active:scale-[0.98]">
+        <Button
+          onClick={() => router.push("/additional-details")}
+          className="w-full h-12 bg-loan-blue hover:bg-loan-blue/90 text-white text-base font-bold rounded-xl shadow-md transition-all active:scale-[0.98]"
+        >
           Continue
         </Button>
       </div>
